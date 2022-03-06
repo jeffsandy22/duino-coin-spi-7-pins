@@ -527,7 +527,6 @@ display.setTextSize(1);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0,10); //Imposta la posizione del cursore (Larghezza,Altezza)
   display.print("JERRY WANG");
-  display.print("333")
   display.display();
   delay(2000);
   display.setTextSize(0);  //Imposta la grandezza del testo

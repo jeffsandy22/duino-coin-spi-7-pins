@@ -73,9 +73,9 @@ namespace {
 // Change the part in brackets to your WiFi name
 const char* SSID = "RIG2";
 // Change the part in brackets to your WiFi password
-const char* PASSWORD = "******";
+const char* PASSWORD = "pradikaa";
 // Change the part in brackets to your Duino-Coin username
-const char* USERNAME = "******";
+const char* USERNAME = "Jeffsandy";
 // Change the part in brackets if you want to set a custom miner name (use Auto to autogenerate)
 const char* RIG_IDENTIFIER = "ESP-01";
 // Change false to true if using 160 MHz clock mode to not get the first share rejected
@@ -516,6 +516,9 @@ void dashboard() {
 } // namespace
 
 void setup() {
+  // Scroll part of the screen
+display.setCursor(0,0);
+display.setTextSize(1);
   Serial.begin(9600);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Address 0x3C for 128x32
   display.clearDisplay();  //Pulisce il buffer da inviare al display
@@ -523,7 +526,8 @@ void setup() {
   display.setTextSize(2);  //Imposta la grandezza del testo
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0,10); //Imposta la posizione del cursore (Larghezza,Altezza)
-  display.print("DUINO-COIN");
+  display.print("JERRY WANG");
+  display.print("333")
   display.display();
   delay(2000);
   display.setTextSize(0);  //Imposta la grandezza del testo
@@ -642,4 +646,7 @@ void loop() {
     if (max_micros_elapsed(micros(), 500000))
       handleSystemEvents();
   }
+
+display.display();
+display.startscrollright(0x00, 0x00);
 }

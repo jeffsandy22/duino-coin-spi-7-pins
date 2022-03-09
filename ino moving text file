@@ -71,11 +71,11 @@ using namespace experimental::crypto;
 
 namespace {
 // Change the part in brackets to your WiFi name
-const char* SSID = "RIG2";
+const char* SSID = "**********";
 // Change the part in brackets to your WiFi password
-const char* PASSWORD = "pradikaa";
+const char* PASSWORD = "*********";
 // Change the part in brackets to your Duino-Coin username
-const char* USERNAME = "Jeffsandy";
+const char* USERNAME = "**********";
 // Change the part in brackets if you want to set a custom miner name (use Auto to autogenerate)
 const char* RIG_IDENTIFIER = "ESP-01";
 // Change false to true if using 160 MHz clock mode to not get the first share rejected
